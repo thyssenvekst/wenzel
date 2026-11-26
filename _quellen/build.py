@@ -49,15 +49,14 @@ SEITEN = [
 JSONLD = """<script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Attorney","name":"Rechtsanwalt Steffen Welz","url":"https://www.rechtsanwalt-welz.de/",
 "telephone":"+49 8092 3059201","faxNumber":"+49 8092 3008308","email":"info@rechtsanwalt-welz.de",
-"image":"https://www.rechtsanwalt-welz.de/assets/img/isar-1000.jpg",
+"image":"https://www.rechtsanwalt-welz.de/assets/img/isar-weit-1600.jpg",
 "address":{"@type":"PostalAddress","streetAddress":"Schneckenburgerstraße 34","postalCode":"81675","addressLocality":"München","addressCountry":"DE"},
 "areaServed":"München","knowsAbout":["Zivilrecht","Vertragsrecht","Verkehrsrecht","Mietrecht","Gesellschaftsrecht","Erbrecht","Arbeitsrecht","Strafrecht","Ordnungswidrigkeitenrecht"]}
 </script>"""
 
 AKT = ' aria-current="page"'
 
-SCHRIFTEN = [("Source Serif 4", "source-serif-4-latin-opsz-normal.woff2", "200 900"),
-             ("Hanken Grotesk", "hanken-grotesk-latin-wght-normal.woff2", "100 900")]
+SCHRIFTEN = [("Hanken Grotesk", "hanken-grotesk-latin-wght-normal.woff2", "100 900")]
 
 
 def fonts_css():
@@ -95,7 +94,7 @@ def kopf(datei, titel, beschreibung):
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:url" content="{kanon}">
-  <meta property="og:image" content="{DOMAIN}assets/img/isar-1000.jpg">
+  <meta property="og:image" content="{DOMAIN}assets/img/isar-weit-1600.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/site.css">

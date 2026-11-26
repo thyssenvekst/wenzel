@@ -2,9 +2,9 @@
 
 Statische Website (HTML, CSS, wenig JavaScript), kein Build-Schritt nötig, läuft auf jedem Webspace und per Doppelklick auf `index.html`.
 
-## Gestaltung „Kommentar“
-Aufgebaut wie ein juristischer Kommentar: Randspalte mit Kapitälchen-Marken, nummeriertes Register der Rechtsgebiete (I.–III.) statt Karten, Fristen-Register mit Normangaben, Randnotizen in Bordeaux.
-Farben: Tinte `#131b25`, Papier `#f3efe7`/`#faf8f3`, Bordeaux `#7a2a34` als einziger Akzent. Schrift: Source Serif 4 (Überschriften) + Hanken Grotesk (Text), lokal als Data-URI.
+## Gestaltung
+Ruhig, zeitgemäß, ohne klassische Kanzlei-Symbolik. Durchgehend eine Schrift (Hanken Grotesk, variabel) mit unterschiedlichen Gewichten, keine Kursiven. Buttons und Bildflächen mit 8–10 px Radius, Navigation mit dezent hinterlegtem aktivem Punkt, Telefon als dunkler Button. Startseite: Name und Leitsatz links, Einleitung und Aktionen rechts, darunter ein breites Isar-Bild und die Kontaktleiste. Rechtsgebiete als nummeriertes Register (01–03), Hinweise als ruhige Papierflächen.
+Farben: Tinte `#131b25`, Papier `#f3efe7`/`#faf8f3`, Bordeaux `#7a2a34` als einziger Akzent.
 
 ## Seiten
 `index` · `kanzlei` (Person, Werdegang, Bürogemeinschaft) · `rechtsgebiete` (Übersicht, Ablauf, Kosten) · `zivilrecht` (Vertrags-, Verkehrs-, Miet-, Gesellschafts-, Erbrecht) · `arbeitsrecht` · `strafrecht` (inkl. Ordnungswidrigkeiten) · `kontakt` · `impressum` · `datenschutz` · `404`, dazu `robots.txt`, `sitemap.xml`.
@@ -23,7 +23,7 @@ Rechtliche Hinweistexte (Fristen) beruhen auf den genannten Normen: § 4 KSchG, 
 | Datei | Quelle | Lizenz |
 |---|---|---|
 | `assets/img/isar-*.jpg` | Khyati Trehan, Unsplash, „Wittelsbacherbrücke, München“ | Unsplash-Lizenz |
-| Schriften | Source Serif 4, Hanken Grotesk | SIL OFL 1.1 (`assets/fonts/LICENSE-*`) |
+| Schrift | Hanken Grotesk | SIL OFL 1.1 (`assets/fonts/LICENSE-*`) |
 
 ## Offen – vom Kanzleiinhaber zu bestätigen (intern)
 1. **Festnetz/Fax mit Vorwahl 08092** (Grafing) bei Kanzleisitz München – bitte bestätigen.
