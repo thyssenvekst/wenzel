@@ -1,110 +1,151 @@
-<section class="hero">
-  <div class="wrap hero-raster">
-    <div>
-      <h1><span>Rechtsanwalt in München</span>Steffen Welz</h1>
-      <p class="lead">Ich berate und vertrete Sie kompetent und engagiert in Rechtsangelegenheiten verschiedener Disziplinen – im Zivilrecht, im Arbeitsrecht, im Erbrecht sowie im Straf- und Ordnungswidrigkeitenrecht. Gerichtlich wie außergerichtlich.</p>
+<section class="auftakt" aria-labelledby="titel">
+  <div class="wrap auftakt-raster">
+    <div class="auftakt-text">
+      <h1 id="titel"><span class="zeile1">Rechtsanwalt in München</span>Steffen Welz</h1>
+      <p class="auftakt-satz">Ein Mandat, ein Ansprechpartner – gerichtlich wie außergerichtlich.</p>
+      <p class="lead">Ich berate und vertrete Sie im Zivilrecht, im Arbeitsrecht sowie im Straf- und Ordnungswidrigkeitenrecht. Seit 2011 in eigener Kanzlei, die ich als Einzelkanzlei selbst führe.</p>
       <div class="knopfreihe">
-        <a class="knopf" href="kontakt.html">Termin vereinbaren <span class="pfeil" aria-hidden="true">→</span></a>
-        <a class="knopf knopf-hell" href="rechtsgebiete.html">Rechtsgebiete ansehen</a>
+        <a class="knopf" href="{{TEL_LINK}}">{{TEL}} anrufen <span class="pfeil" aria-hidden="true">→</span></a>
+        <a class="knopf knopf-still" href="rechtsgebiete.html">Rechtsgebiete</a>
       </div>
     </div>
-    <aside class="briefkopf" aria-labelledby="direkt">
-      <h2 id="direkt">Direkter Kontakt</h2>
+    <figure class="auftakt-bild">
+      <img src="assets/img/isar-1000.jpg" srcset="assets/img/isar-720.jpg 720w, assets/img/isar-1000.jpg 1000w" sizes="(max-width: 860px) 100vw, 42vw" width="1000" height="1250" alt="Die Isar in München an einem hellen Frühsommertag, Blick flussaufwärts von der Wittelsbacherbrücke" fetchpriority="high">
+      <figcaption class="bildzeile">Die Isar an der Wittelsbacherbrücke, München</figcaption>
+    </figure>
+  </div>
+  <div class="wrap">
+    <div class="briefkopf">
       <dl>
         <div><dt>Telefon</dt><dd><a href="{{TEL_LINK}}">{{TEL}}</a></dd></div>
         <div><dt>Mobil</dt><dd><a href="{{MOBIL_LINK}}">{{MOBIL}}</a></dd></div>
         <div><dt>E-Mail</dt><dd><a href="mailto:{{MAIL}}">{{MAIL}}</a></dd></div>
-        <div><dt>Kanzlei</dt><dd>{{ADRESSE}}</dd></div>
+        <div><dt>Kanzlei</dt><dd>Schneckenburgerstraße 34, 81675 München</dd></div>
       </dl>
-    </aside>
+    </div>
   </div>
 </section>
 
-<section class="abschnitt" aria-labelledby="schwerpunkte">
+<section class="abschnitt" aria-labelledby="gebiete">
   <div class="wrap">
-    <div class="kopfzeile zeige">
+    <div class="spalten zeige">
+      <p class="marg rand">Tätigkeit</p>
       <div>
-        <p class="augenbraue">Tätigkeitsschwerpunkte</p>
-        <h2 id="schwerpunkte">Wobei ich Sie unterstütze</h2>
+        <h2 class="abschnitt-titel" id="gebiete">Drei Rechtsgebiete, in denen ich tätig bin</h2>
+        <p class="einleitung">Der Schwerpunkt liegt im Zivilrecht. Dazu kommen das Arbeitsrecht sowie strafrechtliche und ordnungswidrigkeitenrechtliche Mandate.</p>
       </div>
-      <p>Ob Vertrag, Kündigung, Erbschaft oder Ermittlungsverfahren: Sie erhalten eine Einschätzung Ihrer Lage und eine Vertretung, die Ihre Interessen konsequent durchsetzt.</p>
     </div>
-    <ol class="gebiete">
-      <li class="gebiet zeige">
-        <span class="gebiet-nr">01</span>
-        <h3>Zivilrecht</h3>
-        <div>
-          <p>Vertretung in gerichtlichen und außergerichtlichen Rechtsstreitigkeiten des Zivilrechts.</p>
-          <ul class="stichworte"><li>Vertragsrecht</li><li>Verkehrsrecht</li><li>Mietrecht</li><li>Gesellschaftsrecht</li><li>Erbrecht</li></ul>
-        </div>
-        <a class="textlink" href="rechtsgebiete.html#zivilrecht">Mehr <span class="sr">zum Zivilrecht</span></a>
+    <ol class="register">
+      <li class="zeige">
+        <a class="register-zeile" href="zivilrecht.html">
+          <span class="register-ziffer" aria-hidden="true">I.</span>
+          <span class="register-titel">Zivilrecht</span>
+          <span class="register-text"><span>Vertretung in gerichtlichen und außergerichtlichen Streitigkeiten des Zivilrechts.</span><span class="register-unter">Vertragsrecht · Verkehrsrecht · Mietrecht · Gesellschaftsrecht · Erbrecht</span></span>
+          <span class="register-pfeil" aria-hidden="true">→</span>
+        </a>
       </li>
-      <li class="gebiet zeige">
-        <span class="gebiet-nr">02</span>
-        <h3>Arbeitsrecht</h3>
-        <div>
-          <p>Fundierte Kenntnisse im Individual- wie im Kollektivarbeitsrecht.</p>
-          <ul class="stichworte"><li>Kündigungen</li><li>Abmahnungen</li><li>Lohnforderungen</li><li>Zeugnisstreitigkeiten</li></ul>
-        </div>
-        <a class="textlink" href="rechtsgebiete.html#arbeitsrecht">Mehr <span class="sr">zum Arbeitsrecht</span></a>
+      <li class="zeige">
+        <a class="register-zeile" href="arbeitsrecht.html">
+          <span class="register-ziffer" aria-hidden="true">II.</span>
+          <span class="register-titel">Arbeitsrecht</span>
+          <span class="register-text"><span>Individual- und Kollektivarbeitsrecht – von der Abmahnung bis zum Zeugnis.</span><span class="register-unter">Kündigung · Abmahnung · Lohnforderungen · Zeugnis</span></span>
+          <span class="register-pfeil" aria-hidden="true">→</span>
+        </a>
       </li>
-      <li class="gebiet zeige">
-        <span class="gebiet-nr">03</span>
-        <h3>Strafrecht &amp; Ordnungs&shy;widrigkeiten</h3>
-        <div>
-          <p>Auch strafrechtliche und ordnungswidrigkeitenrechtliche Mandate werden übernommen.</p>
-          <ul class="stichworte"><li>Strafverfahren</li><li>Bußgeldverfahren</li></ul>
-        </div>
-        <a class="textlink" href="rechtsgebiete.html#strafrecht">Mehr <span class="sr">zum Strafrecht</span></a>
+      <li class="zeige">
+        <a class="register-zeile" href="strafrecht.html">
+          <span class="register-ziffer" aria-hidden="true">III.</span>
+          <span class="register-titel">Strafrecht &amp; Ordnungs&shy;widrigkeiten</span>
+          <span class="register-text"><span>Strafrechtliche und ordnungswidrigkeitenrechtliche Mandate werden ebenfalls übernommen.</span><span class="register-unter">Ermittlungsverfahren · Strafbefehl · Bußgeldbescheid</span></span>
+          <span class="register-pfeil" aria-hidden="true">→</span>
+        </a>
       </li>
     </ol>
   </div>
 </section>
 
-<section class="abschnitt abschnitt-dunkel" aria-labelledby="kanzlei">
-  <div class="wrap zitatblock">
+<section class="abschnitt dunkel" aria-labelledby="kanzlei">
+  <div class="wrap kanzlei-raster">
     <div class="zeige">
-      <p class="augenbraue">Die Kanzlei</p>
-      <h2 id="kanzlei">Eine Einzelkanzlei – persönlich geführt</h2>
+      <p class="marg">Die Kanzlei</p>
+      <h2 class="sr" id="kanzlei">Einzelkanzlei in Bürogemeinschaft</h2>
+      <p class="grosssatz">Eine Einzelkanzlei. Ihr Anliegen liegt bei <em>einem</em> Anwalt – von der ersten Frage an.</p>
+      <p class="einleitung">Rechtsanwalt Steffen Welz führt seine Kanzlei seit 2011 selbständig. Studium in Freiburg im Breisgau und München, Zulassung zur Rechtsanwaltschaft nach dem Zweiten Staatsexamen 2010.</p>
+      <p><a class="textlink" href="kanzlei.html">Person &amp; Werdegang</a></p>
     </div>
     <div class="zeige">
-      <blockquote>
-        <p>Ihr Mandat liegt in einer Hand: Rechtsanwalt Steffen Welz betreibt seine Kanzlei als Einzelkanzlei und betreut Ihr Anliegen persönlich.</p>
-      </blockquote>
-      <p class="klein">Die Kanzlei befindet sich in Bürogemeinschaft mit Rechtsanwältin Sandra M. Rosar und Rechtsanwältin Lydia Bergida. Diese Büroteilung stellt keine Sozietät dar; eine gemeinschaftliche Haftung findet nicht statt.</p>
-      <p><a class="textlink" href="kanzlei.html">Person &amp; Kanzlei kennenlernen</a></p>
+      <p class="marg">In Bürogemeinschaft mit</p>
+      <ul class="namen">
+        <li class="eigen"><strong>Steffen Welz</strong><span>Rechtsanwalt · Einzelkanzlei</span></li>
+        <li><strong>Sandra M. Rosar</strong><span>Rechtsanwältin</span></li>
+        <li><strong>Lydia Bergida</strong><span>Rechtsanwältin</span></li>
+      </ul>
+      <p class="klein">Die Büroteilung stellt keine Sozietät dar. Die Kanzlei Steffen Welz wird als Einzelkanzlei betrieben; eine gemeinschaftliche Haftung findet nicht statt.</p>
     </div>
   </div>
 </section>
 
-<section class="abschnitt" aria-labelledby="eckdaten">
+<section class="abschnitt abschnitt-papier" aria-labelledby="fristen">
   <div class="wrap">
-    <div class="kopfzeile zeige">
+    <div class="spalten zeige">
+      <p class="marg rand">Wenn es eilt</p>
       <div>
-        <p class="augenbraue">Eckdaten</p>
-        <h2 id="eckdaten">Erfahrung aus eigener Kanzlei</h2>
+        <h2 class="abschnitt-titel" id="fristen">Manche Fristen sind kurz. Melden Sie sich früh.</h2>
+        <p class="einleitung">Vier gesetzliche Fristen, die in der Praxis häufig unterschätzt werden. Wer sie versäumt, verliert oft Rechte, die sich später nicht mehr zurückholen lassen.</p>
       </div>
-      <p>Studium der Rechtswissenschaften in Freiburg im Breisgau und München, seit 2010 zugelassen und seit 2011 mit eigener Kanzlei selbständig.</p>
     </div>
-    <div class="fakten zeige">
-      <div class="fakt"><strong>2010</strong><span>Zweites Juristisches Staatsexamen und Zulassung zur Rechtsanwaltschaft</span></div>
-      <div class="fakt"><strong>2011</strong><span>Selbständig mit eigener Kanzlei</span></div>
-      <div class="fakt"><strong>München</strong><span>Kanzleisitz in der Schneckenburgerstraße 34</span></div>
-    </div>
+    <ol class="fristen">
+      <li class="zeige">
+        <p class="frist-dauer">3 Wochen<small>Arbeitsrecht</small></p>
+        <div class="frist-text">
+          <h3>Klage gegen eine Kündigung</h3>
+          <p>Wer sich gegen eine Kündigung wehren will, muss innerhalb von drei Wochen nach Zugang der schriftlichen Kündigung Klage beim Arbeitsgericht erheben.</p>
+          <p class="norm">§ 4 Kündigungsschutzgesetz · <a href="arbeitsrecht.html#kuendigung">Mehr zur Kündigung</a></p>
+        </div>
+      </li>
+      <li class="zeige">
+        <p class="frist-dauer">2 Wochen<small>Ordnungswidrigkeiten</small></p>
+        <div class="frist-text">
+          <h3>Einspruch gegen einen Bußgeldbescheid</h3>
+          <p>Der Einspruch ist innerhalb von zwei Wochen nach Zustellung bei der Behörde einzulegen, die den Bescheid erlassen hat.</p>
+          <p class="norm">§ 67 Ordnungswidrigkeitengesetz · <a href="strafrecht.html#bussgeld">Mehr zum Bußgeldverfahren</a></p>
+        </div>
+      </li>
+      <li class="zeige">
+        <p class="frist-dauer">2 Wochen<small>Strafrecht</small></p>
+        <div class="frist-text">
+          <h3>Einspruch gegen einen Strafbefehl</h3>
+          <p>Ohne Einspruch binnen zwei Wochen nach Zustellung wird der Strafbefehl rechtskräftig – er steht dann einem Urteil gleich.</p>
+          <p class="norm">§ 410 Strafprozessordnung · <a href="strafrecht.html#strafbefehl">Mehr zum Strafbefehl</a></p>
+        </div>
+      </li>
+      <li class="zeige">
+        <p class="frist-dauer">6 Wochen<small>Erbrecht</small></p>
+        <div class="frist-text">
+          <h3>Ausschlagung einer Erbschaft</h3>
+          <p>Die Frist beginnt in der Regel, sobald Sie vom Erbfall und vom Grund Ihrer Berufung als Erbe erfahren. Danach gilt das Erbe als angenommen – samt etwaiger Schulden.</p>
+          <p class="norm">§ 1944 Bürgerliches Gesetzbuch · <a href="zivilrecht.html#erbrecht">Mehr zum Erbrecht</a></p>
+        </div>
+      </li>
+    </ol>
+    <p class="hinweis-klein">Allgemeine Hinweise ohne Anspruch auf Vollständigkeit; Sonderfälle und Ausnahmen sind möglich. Sie ersetzen keine Beratung im Einzelfall.</p>
   </div>
 </section>
 
-<section class="abschnitt abschnitt-dunkel" aria-labelledby="kontakt">
-  <div class="wrap kontaktband">
+<section class="abschnitt dunkel" aria-labelledby="kontakt">
+  <div class="wrap schluss-raster">
     <div class="zeige">
-      <p class="augenbraue">Kontakt</p>
-      <h2 id="kontakt">Sprechen Sie mich an</h2>
-      <p>Bei Fragen oder Terminwünschen erreichen Sie mich telefonisch oder per E-Mail. Schildern Sie kurz Ihr Anliegen – ich melde mich bei Ihnen.</p>
+      <p class="marg">Kontakt</p>
+      <h2 class="abschnitt-titel" id="kontakt">Schildern Sie mir Ihr Anliegen.</h2>
+      <p class="einleitung">Am schnellsten erreichen Sie mich telefonisch. Halten Sie Schreiben, Verträge oder Bescheide bereit, um die es geht – und vor allem deren Datum.</p>
     </div>
-    <div class="kontaktwege zeige">
-      <a href="{{TEL_LINK}}"><span>Telefon</span><span>{{TEL}}</span></a>
-      <a href="{{MOBIL_LINK}}"><span>Mobil</span><span>{{MOBIL}}</span></a>
-      <a href="mailto:{{MAIL}}"><span>E-Mail</span><span>{{MAIL}}</span></a>
+    <div class="zeige">
+      <a class="schluss-tel" href="{{TEL_LINK}}">{{TEL}}</a>
+      <ul class="schluss-wege">
+        <li><span>Mobil</span> <a href="{{MOBIL_LINK}}">{{MOBIL}}</a></li>
+        <li><span>E-Mail</span> <a href="mailto:{{MAIL}}">{{MAIL}}</a></li>
+        <li><span>Kanzlei</span> <a href="kontakt.html">Schneckenburgerstraße 34, München</a></li>
+      </ul>
     </div>
   </div>
 </section>

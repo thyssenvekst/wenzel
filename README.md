@@ -1,36 +1,36 @@
-# Website Rechtsanwalt Steffen Welz
+# Website Rechtsanwalt Steffen Welz – Entwurf
 
-Statische Website (HTML, CSS, JavaScript) ohne Build-Schritt, lauffähig auf jedem Webspace.
+Statische Website (HTML, CSS, wenig JavaScript), kein Build-Schritt nötig, läuft auf jedem Webspace und per Doppelklick auf `index.html`.
 
-## Starten
-
-`index.html` im Browser öffnen oder lokal ausliefern:
-
-```
-python3 -m http.server 8000
-```
+## Gestaltung „Kommentar“
+Aufgebaut wie ein juristischer Kommentar: Randspalte mit Kapitälchen-Marken, nummeriertes Register der Rechtsgebiete (I.–III.) statt Karten, Fristen-Register mit Normangaben, Randnotizen in Bordeaux.
+Farben: Tinte `#131b25`, Papier `#f3efe7`/`#faf8f3`, Bordeaux `#7a2a34` als einziger Akzent. Schrift: Source Serif 4 (Überschriften) + Hanken Grotesk (Text), lokal als Data-URI.
 
 ## Seiten
-
-`index.html`, `kanzlei.html` (Person, Werdegang, Bürogemeinschaft), `rechtsgebiete.html`, `kontakt.html` (inkl. Anfahrt), `impressum.html`, `datenschutz.html`, `404.html`, dazu `robots.txt` und `sitemap.xml`.
+`index` · `kanzlei` (Person, Werdegang, Bürogemeinschaft) · `rechtsgebiete` (Übersicht, Ablauf, Kosten) · `zivilrecht` (Vertrags-, Verkehrs-, Miet-, Gesellschafts-, Erbrecht) · `arbeitsrecht` · `strafrecht` (inkl. Ordnungswidrigkeiten) · `kontakt` · `impressum` · `datenschutz` · `404`, dazu `robots.txt`, `sitemap.xml`.
 
 ## Pflege
-
-Inhalte: `_quellen/seiten/*.html`. Kopf, Navigation, Fuß und Kontaktdaten zentral in `_quellen/build.py`. Nach Änderungen `python3 _quellen/build.py` ausführen.
+Inhalte in `_quellen/seiten/*.html`; Kopf, Fuß, Kontaktdaten, Metadaten in `_quellen/build.py`. Danach `python3 _quellen/build.py`.
 
 ## Technik
+Keine Cookies, kein Tracking, keine externen Dienste/CDNs. Kartenlink nur zu OpenStreetMap. Einblendungen respektieren „Bewegung reduzieren“; ohne JavaScript bleibt alles sichtbar.
 
-- Keine Cookies, kein Tracking, keine externen Dienste oder CDNs; Karte nur als Link zu OpenStreetMap.
-- Schriften lokal: Source Serif 4 und Hanken Grotesk (SIL Open Font License 1.1).
-- Dezente Einblend-Animation per IntersectionObserver; respektiert „Bewegung reduzieren“, ohne JavaScript ist alles sichtbar.
-- Quelle aller Inhalte: www.rechtsanwalt-welz.de (Stand 26.11.2026). Nicht übernommen: Platzhalter „Neues Textfeld“, Baukasten-Meldungen unter „Aktuelles“ (sprachen fälschlich von „Sozietät“), Google-Analytics-Abschnitt der alten Datenschutzerklärung (neue Seite nutzt kein Tracking).
+## Quellen
+Alle Kanzleidaten von www.rechtsanwalt-welz.de (abgerufen 26.11.2026). Nicht übernommen: Meldungen unter „Aktuelles“ (sprechen fälschlich von „Sozietät“), Google-Maps-Koordinaten (zeigen nicht auf die Schneckenburgerstraße), Reste fremder Kanzleien in der alten Datenschutzerklärung.
+Rechtliche Hinweistexte (Fristen) beruhen auf den genannten Normen: § 4 KSchG, § 67 OWiG, § 410 StPO, § 1944 BGB, §§ 195, 199 BGB, § 556 Abs. 3 BGB, § 109 GewO, § 12a ArbGG, § 136 StPO.
 
-## Offene Punkte – vom Kanzleiinhaber zu bestätigen (intern)
+## Bilder und Lizenzen
+| Datei | Quelle | Lizenz |
+|---|---|---|
+| `assets/img/isar-*.jpg` | Khyati Trehan, Unsplash, „Wittelsbacherbrücke, München“ | Unsplash-Lizenz |
+| Schriften | Source Serif 4, Hanken Grotesk | SIL OFL 1.1 (`assets/fonts/LICENSE-*`) |
 
-1. **Festnetz 08092 3059201 / Fax 08092 3008308:** Vorwahl 08092 gehört zu Grafing b. München, die Kanzlei sitzt in München (81675). Nummern bitte bestätigen.
-2. **Porträtfoto:** Auf der alten Seite nur in 135 × 180 px vorhanden – zu klein. Die Seite ist bewusst typografisch gestaltet; ein professionelles Porträt kann auf `kanzlei.html` ergänzt werden.
-3. **Impressum:** Anschrift der Rechtsanwaltskammer München, Anschrift und räumlicher Geltungsbereich der Berufshaftpflichtversicherung (Allianz) ergänzen. Optional: Hinweis zur Verbraucherstreitbeilegung / Schlichtungsstelle der Rechtsanwaltschaft.
-4. **Datenschutz:** Hosting-Anbieter (Auftragsverarbeiter, bisher IONOS) und Speicherdauer der Server-Logfiles ergänzen; Text vor Veröffentlichung rechtlich prüfen. Keine Konformitätsaussage durch diese Vorlage.
-5. **Domain:** Canonical-URLs, `sitemap.xml` und `robots.txt` gehen von https://www.rechtsanwalt-welz.de/ aus.
-6. **Werdegang:** Enthält die früheren Bürogemeinschaften mit Namen wie auf der alten Website – Veröffentlichung bitte bestätigen. Vorname der „Kollegin Leucht“ (2013) fehlt in der Quelle.
-7. **Kontaktformular:** Die alte Website erwähnt ein Formular, hat aber keines. Die neue Seite verzichtet bewusst darauf (Telefon/E-Mail); ein Formular bräuchte ein serverseitiges Skript.
+## Offen – vom Kanzleiinhaber zu bestätigen (intern)
+1. **Festnetz/Fax mit Vorwahl 08092** (Grafing) bei Kanzleisitz München – bitte bestätigen.
+2. **Branchenbuch muenchen.de nennt Obermaierstr. 2, 80538 München**, die eigene Website Schneckenburgerstraße 34, 81675 München. Verwendet: Angabe der eigenen Website. Aktuelle Anschrift klären.
+3. **Porträtfoto** fehlt (alte Seite nur 135 × 180 px). Ein professionelles Porträt passt auf `kanzlei.html` und optional in den Auftakt der Startseite.
+4. **Impressum:** Anschrift der Rechtsanwaltskammer München sowie Anschrift und räumlicher Geltungsbereich der Berufshaftpflichtversicherung ergänzen; Hinweis zur Verbraucherstreitbeilegung ergänzen.
+5. **Datenschutz:** Hosting-Anbieter (Auftragsverarbeitung) und Speicherdauer der Logfiles ergänzen; Text vor Veröffentlichung rechtlich prüfen.
+6. **Werdegang:** frühere Bürogemeinschaften mit Namen – Veröffentlichung bestätigen; Vorname „Kollegin Leucht“ fehlt.
+7. **Fachtexte** zu den Rechtsgebieten (Beispiele typischer Anliegen, Fristen-Hinweise) sind neu formuliert und vom Anwalt fachlich freizugeben, ebenso ob Arbeitgeber- und/oder Arbeitnehmerseite vertreten wird.
+8. **Sprechzeiten** sind nicht bekannt und daher nicht angegeben.

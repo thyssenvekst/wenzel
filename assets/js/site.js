@@ -17,7 +17,7 @@
     document.addEventListener("keydown", function (e) {
       if (e.key === "Escape" && !menue.hidden) { setzeMenue(false); knopf.focus(); }
     });
-    window.matchMedia("(min-width: 861px)").addEventListener("change", function (m) { if (m.matches) setzeMenue(false); });
+    window.matchMedia("(min-width: 1021px)").addEventListener("change", function (m) { if (m.matches) setzeMenue(false); });
   }
 
   function scroll() { if (kopf) kopf.classList.toggle("ist-gescrollt", window.scrollY > 8); }
@@ -34,5 +34,19 @@
     ziele.forEach(function (z) { io.observe(z); });
   } else {
     ziele.forEach(function (z) { z.classList.add("ist-sichtbar"); });
+  }
+  var leiste = document.querySelectorAll(".inhaltsleiste a");
+  if (leiste.length && "IntersectionObserver" in window) {
+    var karte = {};
+    leiste.forEach(function (a) { karte[a.getAttribute("href").slice(1)] = a; });
+    var spion = new IntersectionObserver(function (eintraege) {
+      eintraege.forEach(function (e) {
+        if (e.isIntersecting && karte[e.target.id]) {
+          leiste.forEach(function (a) { a.classList.remove("ist-aktiv"); });
+          karte[e.target.id].classList.add("ist-aktiv");
+        }
+      });
+    }, { rootMargin: "-30% 0px -60% 0px" });
+    Object.keys(karte).forEach(function (id) { var el = document.getElementById(id); if (el) spion.observe(el); });
   }
 })();

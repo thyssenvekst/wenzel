@@ -1,38 +1,43 @@
 <section class="seitenkopf">
   <div class="wrap">
-    <p class="augenbraue">Kontakt &amp; Anfahrt</p>
-    <h1>So erreichen Sie mich</h1>
-    <p class="lead">Bei Fragen oder Terminwünschen erreichen Sie mich am schnellsten telefonisch. Gern können Sie mir Ihr Anliegen auch vorab per E-Mail schildern.</p>
+    <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="index.html">Start</a></li><li aria-current="page">Kontakt</li></ol></nav>
+    <div class="seitenkopf-raster">
+      <h1>Kontakt &amp; Anfahrt</h1>
+      <p class="lead">Rufen Sie an oder schreiben Sie eine E-Mail. Termine in der Kanzlei werden vorab vereinbart.</p>
+    </div>
   </div>
 </section>
 
-<section class="abschnitt" aria-label="Kontaktdaten und Anfahrt">
-  <div class="wrap kontaktraster">
-    <div class="zeige">
-      <h2 class="sr">Kontaktdaten</h2>
-      <div class="kontaktliste">
-        <a href="{{TEL_LINK}}"><span class="art">Telefon</span><span class="wert">{{TEL}}</span></a>
-        <a href="{{MOBIL_LINK}}"><span class="art">Mobil</span><span class="wert">{{MOBIL}}</span></a>
-        <a href="mailto:{{MAIL}}"><span class="art">E-Mail</span><span class="wert">{{MAIL}}</span></a>
-        <div><span class="art">Telefax</span><span class="wert">{{FAX}}</span></div>
-      </div>
-      <div class="fliesstext" style="margin-top:2.5rem">
-        <h3>Für Ihre erste Kontaktaufnahme</h3>
-        <ul class="punkte">
-          <li>Nennen Sie kurz das Rechtsgebiet und worum es geht.</li>
-          <li>Geben Sie an, ob eine Frist läuft – etwa nach einer Kündigung oder einem Bescheid.</li>
-          <li>Halten Sie vorhandene Unterlagen bereit, zum Beispiel Verträge, Schreiben oder Bescheide.</li>
-        </ul>
-      </div>
+<div class="wrap kontakt-raster kontakt-seite">
+  <div class="zeige">
+    <h2 class="sr">Kontaktwege</h2>
+    <ul class="kontaktliste">
+      <li><a href="{{TEL_LINK}}"><span class="art">Telefon</span><span class="wert">{{TEL}}</span><span class="pfeil" aria-hidden="true">→</span></a></li>
+      <li><a href="{{MOBIL_LINK}}"><span class="art">Mobil</span><span class="wert">{{MOBIL}}</span><span class="pfeil" aria-hidden="true">→</span></a></li>
+      <li><a href="mailto:{{MAIL}}"><span class="art">E-Mail</span><span class="wert">{{MAIL}}</span><span class="pfeil" aria-hidden="true">→</span></a></li>
+      <li><div class="ohne-link"><span class="art">Telefax</span><span class="wert">{{FAX}}</span></div></li>
+    </ul>
+    <p class="hinweis-klein">Bitte senden Sie vertrauliche Unterlagen nicht unverschlüsselt per E-Mail, sondern stimmen Sie den Übermittlungsweg vorher telefonisch ab.</p>
+  </div>
+  <div class="zeige">
+    <div class="block">
+      <h2>Kanzlei</h2>
+      <p class="anschrift">Rechtsanwalt Steffen Welz<br>{{ADRESSE}}</p>
+      <a class="knopf knopf-still" href="{{KARTE}}" target="_blank" rel="noopener">Route planen <span class="pfeil" aria-hidden="true">↗</span><span class="sr"> (OpenStreetMap, öffnet in neuem Fenster)</span></a>
+      <p class="hinweis-klein">Der Link führt zu OpenStreetMap. Erst beim Anklicken werden Daten an diesen Dienst übermittelt.</p>
     </div>
-    <div class="anfahrt zeige">
-      <p class="augenbraue">Kanzleisitz</p>
-      <address>Rechtsanwalt Steffen Welz<br>{{ADRESSE}}</address>
-      <p>Für eine persönliche Besprechung in der Kanzlei vereinbaren Sie bitte vorab einen Termin.</p>
-      <div class="knopfreihe">
-        <a class="knopf" href="https://www.openstreetmap.org/search?query=Schneckenburgerstra%C3%9Fe%2034%2C%2081675%20M%C3%BCnchen" target="_blank" rel="noopener">Route planen <span class="pfeil" aria-hidden="true">↗</span><span class="sr">(OpenStreetMap, öffnet in neuem Fenster)</span></a>
-      </div>
-      <p style="margin-top:1rem;font-size:.9rem;color:var(--muted)">Der Link führt zu OpenStreetMap. Erst beim Anklicken werden Daten an diesen Dienst übermittelt.</p>
+    <div class="block">
+      <h2>Für das erste Gespräch</h2>
+      <ul class="anliegen" style="columns:auto">
+        <li>Schreiben, Bescheide oder Kündigung – mit Zugangsdatum</li>
+        <li>Verträge und bisherige Korrespondenz</li>
+        <li>Namen und Anschrift der Gegenseite</li>
+        <li>Falls vorhanden: Daten der Rechtsschutzversicherung</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Bürogemeinschaft</h2>
+      <p class="klein">Unter derselben Anschrift arbeiten Rechtsanwältin Sandra M. Rosar und Rechtsanwältin Lydia Bergida mit jeweils eigener Kanzlei. Es besteht keine Sozietät und keine gemeinschaftliche Haftung. <a href="kanzlei.html#buero">Mehr zur Kanzleistruktur</a></p>
     </div>
   </div>
-</section>
+</div>

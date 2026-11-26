@@ -6,15 +6,15 @@
   <title>Kontakt &amp; Anfahrt – Rechtsanwalt Steffen Welz, München</title>
   <meta name="description" content="Rechtsanwalt Steffen Welz, Schneckenburgerstraße 34, 81675 München. Telefon 08092 3059201, Mobil 0177 3258123, E-Mail info@rechtsanwalt-welz.de.">
   <link rel="canonical" href="https://www.rechtsanwalt-welz.de/kontakt.html">
-  <meta name="theme-color" content="#16212e">
+  <meta name="theme-color" content="#131b25">
   <meta property="og:title" content="Kontakt &amp; Anfahrt – Rechtsanwalt Steffen Welz, München">
   <meta property="og:description" content="Rechtsanwalt Steffen Welz, Schneckenburgerstraße 34, 81675 München. Telefon 08092 3059201, Mobil 0177 3258123, E-Mail info@rechtsanwalt-welz.de.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:url" content="https://www.rechtsanwalt-welz.de/kontakt.html">
+  <meta property="og:image" content="https://www.rechtsanwalt-welz.de/assets/img/isar-1000.jpg">
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/site.css">
   
 </head>
@@ -29,13 +29,12 @@
     </a>
     <nav class="hauptnav" aria-label="Hauptnavigation">
       <ul>
-        <li><a href="index.html">Start</a></li>
         <li><a href="kanzlei.html">Person &amp; Kanzlei</a></li>
         <li><a href="rechtsgebiete.html">Rechtsgebiete</a></li>
         <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
       </ul>
     </nav>
-    <a class="kopf-tel" href="tel:+4980923059201"><span class="kopf-tel-label">Telefon</span> 08092 3059201</a>
+    <a class="kopf-tel" href="tel:+4980923059201">08092 3059201</a>
     <button class="menue-knopf" type="button" aria-expanded="false" aria-controls="menue" data-menue-knopf>
       <span data-menue-text>Menü</span><span class="striche" aria-hidden="true"></span>
     </button>
@@ -46,6 +45,9 @@
         <li><a href="index.html">Start</a></li>
         <li><a href="kanzlei.html">Person &amp; Kanzlei</a></li>
         <li><a href="rechtsgebiete.html">Rechtsgebiete</a></li>
+        <li class="unterpunkt"><a href="zivilrecht.html">Zivilrecht</a></li>
+        <li class="unterpunkt"><a href="arbeitsrecht.html">Arbeitsrecht</a></li>
+        <li class="unterpunkt"><a href="strafrecht.html">Strafrecht &amp; Ordnungswidrigkeiten</a></li>
         <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
       </ul>
       <div class="menue-fuss">
@@ -60,70 +62,82 @@
 <main id="inhalt">
 <section class="seitenkopf">
   <div class="wrap">
-    <p class="augenbraue">Kontakt &amp; Anfahrt</p>
-    <h1>So erreichen Sie mich</h1>
-    <p class="lead">Bei Fragen oder Terminwünschen erreichen Sie mich am schnellsten telefonisch. Gern können Sie mir Ihr Anliegen auch vorab per E-Mail schildern.</p>
+    <nav class="brotkrumen" aria-label="Brotkrumen"><ol><li><a href="index.html">Start</a></li><li aria-current="page">Kontakt</li></ol></nav>
+    <div class="seitenkopf-raster">
+      <h1>Kontakt &amp; Anfahrt</h1>
+      <p class="lead">Rufen Sie an oder schreiben Sie eine E-Mail. Termine in der Kanzlei werden vorab vereinbart.</p>
+    </div>
   </div>
 </section>
 
-<section class="abschnitt" aria-label="Kontaktdaten und Anfahrt">
-  <div class="wrap kontaktraster">
-    <div class="zeige">
-      <h2 class="sr">Kontaktdaten</h2>
-      <div class="kontaktliste">
-        <a href="tel:+4980923059201"><span class="art">Telefon</span><span class="wert">08092 3059201</span></a>
-        <a href="tel:+491773258123"><span class="art">Mobil</span><span class="wert">0177 3258123</span></a>
-        <a href="mailto:info@rechtsanwalt-welz.de"><span class="art">E-Mail</span><span class="wert">info@rechtsanwalt-welz.de</span></a>
-        <div><span class="art">Telefax</span><span class="wert">08092 3008308</span></div>
-      </div>
-      <div class="fliesstext" style="margin-top:2.5rem">
-        <h3>Für Ihre erste Kontaktaufnahme</h3>
-        <ul class="punkte">
-          <li>Nennen Sie kurz das Rechtsgebiet und worum es geht.</li>
-          <li>Geben Sie an, ob eine Frist läuft – etwa nach einer Kündigung oder einem Bescheid.</li>
-          <li>Halten Sie vorhandene Unterlagen bereit, zum Beispiel Verträge, Schreiben oder Bescheide.</li>
-        </ul>
-      </div>
+<div class="wrap kontakt-raster kontakt-seite">
+  <div class="zeige">
+    <h2 class="sr">Kontaktwege</h2>
+    <ul class="kontaktliste">
+      <li><a href="tel:+4980923059201"><span class="art">Telefon</span><span class="wert">08092 3059201</span><span class="pfeil" aria-hidden="true">→</span></a></li>
+      <li><a href="tel:+491773258123"><span class="art">Mobil</span><span class="wert">0177 3258123</span><span class="pfeil" aria-hidden="true">→</span></a></li>
+      <li><a href="mailto:info@rechtsanwalt-welz.de"><span class="art">E-Mail</span><span class="wert">info@rechtsanwalt-welz.de</span><span class="pfeil" aria-hidden="true">→</span></a></li>
+      <li><div class="ohne-link"><span class="art">Telefax</span><span class="wert">08092 3008308</span></div></li>
+    </ul>
+    <p class="hinweis-klein">Bitte senden Sie vertrauliche Unterlagen nicht unverschlüsselt per E-Mail, sondern stimmen Sie den Übermittlungsweg vorher telefonisch ab.</p>
+  </div>
+  <div class="zeige">
+    <div class="block">
+      <h2>Kanzlei</h2>
+      <p class="anschrift">Rechtsanwalt Steffen Welz<br>Schneckenburgerstraße 34<br>81675 München</p>
+      <a class="knopf knopf-still" href="https://www.openstreetmap.org/search?query=Schneckenburgerstra%C3%9Fe%2034%2C%2081675%20M%C3%BCnchen" target="_blank" rel="noopener">Route planen <span class="pfeil" aria-hidden="true">↗</span><span class="sr"> (OpenStreetMap, öffnet in neuem Fenster)</span></a>
+      <p class="hinweis-klein">Der Link führt zu OpenStreetMap. Erst beim Anklicken werden Daten an diesen Dienst übermittelt.</p>
     </div>
-    <div class="anfahrt zeige">
-      <p class="augenbraue">Kanzleisitz</p>
-      <address>Rechtsanwalt Steffen Welz<br>Schneckenburgerstraße 34<br>81675 München</address>
-      <p>Für eine persönliche Besprechung in der Kanzlei vereinbaren Sie bitte vorab einen Termin.</p>
-      <div class="knopfreihe">
-        <a class="knopf" href="https://www.openstreetmap.org/search?query=Schneckenburgerstra%C3%9Fe%2034%2C%2081675%20M%C3%BCnchen" target="_blank" rel="noopener">Route planen <span class="pfeil" aria-hidden="true">↗</span><span class="sr">(OpenStreetMap, öffnet in neuem Fenster)</span></a>
-      </div>
-      <p style="margin-top:1rem;font-size:.9rem;color:var(--muted)">Der Link führt zu OpenStreetMap. Erst beim Anklicken werden Daten an diesen Dienst übermittelt.</p>
+    <div class="block">
+      <h2>Für das erste Gespräch</h2>
+      <ul class="anliegen" style="columns:auto">
+        <li>Schreiben, Bescheide oder Kündigung – mit Zugangsdatum</li>
+        <li>Verträge und bisherige Korrespondenz</li>
+        <li>Namen und Anschrift der Gegenseite</li>
+        <li>Falls vorhanden: Daten der Rechtsschutzversicherung</li>
+      </ul>
+    </div>
+    <div class="block">
+      <h2>Bürogemeinschaft</h2>
+      <p class="klein">Unter derselben Anschrift arbeiten Rechtsanwältin Sandra M. Rosar und Rechtsanwältin Lydia Bergida mit jeweils eigener Kanzlei. Es besteht keine Sozietät und keine gemeinschaftliche Haftung. <a href="kanzlei.html#buero">Mehr zur Kanzleistruktur</a></p>
     </div>
   </div>
-</section>
+</div>
 </main>
 
 <footer class="fuss">
   <div class="wrap">
-    <div class="fuss-spalten">
+    <div class="fuss-oben">
       <div class="fuss-marke">
-        <p class="marke-name" translate="no">Steffen Welz</p>
-        <p>Rechtsanwalt<br>Einzelkanzlei in Bürogemeinschaft</p>
+        <span class="marke-name" translate="no">Steffen Welz</span>
+        <p>Rechtsanwalt · Einzelkanzlei<br>in Bürogemeinschaft, keine Sozietät</p>
       </div>
       <div>
-        <h2>Anschrift</h2>
+        <h2>Kanzlei</h2>
         <p>Schneckenburgerstraße 34<br>81675 München</p>
+        <p><a href="https://www.openstreetmap.org/search?query=Schneckenburgerstra%C3%9Fe%2034%2C%2081675%20M%C3%BCnchen" target="_blank" rel="noopener">Auf der Karte ansehen ↗<span class="sr"> (OpenStreetMap, neues Fenster)</span></a></p>
       </div>
       <div>
         <h2>Kontakt</h2>
-        <p><a href="tel:+4980923059201">Telefon 08092 3059201</a><br><a href="tel:+491773258123">Mobil 0177 3258123</a><br>Telefax 08092 3008308<br><a href="mailto:info@rechtsanwalt-welz.de">info@rechtsanwalt-welz.de</a></p>
+        <ul>
+          <li><a href="tel:+4980923059201">Telefon 08092 3059201</a></li>
+          <li><a href="tel:+491773258123">Mobil 0177 3258123</a></li>
+          <li>Telefax 08092 3008308</li>
+          <li><a href="mailto:info@rechtsanwalt-welz.de">info@rechtsanwalt-welz.de</a></li>
+        </ul>
       </div>
       <div>
-        <h2>Seiten</h2>
+        <h2>Rechtsgebiete</h2>
         <ul>
+          <li><a href="zivilrecht.html">Zivilrecht</a></li>
+          <li><a href="arbeitsrecht.html">Arbeitsrecht</a></li>
+          <li><a href="strafrecht.html">Strafrecht &amp; Ordnungswidrigkeiten</a></li>
           <li><a href="kanzlei.html">Person &amp; Kanzlei</a></li>
-          <li><a href="rechtsgebiete.html">Rechtsgebiete</a></li>
-          <li><a href="kontakt.html">Kontakt &amp; Anfahrt</a></li>
         </ul>
       </div>
     </div>
     <div class="fuss-unten">
-      <span>© 2026 Rechtsanwalt Steffen Welz · Rechtsanwaltskammer München</span>
+      <span>© 2026 Rechtsanwalt Steffen Welz · Mitglied der Rechtsanwaltskammer München</span>
       <ul>
         <li><a href="impressum.html">Impressum</a></li>
         <li><a href="datenschutz.html">Datenschutz</a></li>
