@@ -2,9 +2,12 @@
 
 Statische Website (HTML, CSS, wenig JavaScript), kein Build-Schritt nötig, läuft auf jedem Webspace und per Doppelklick auf `index.html`.
 
-## Gestaltung
-Ruhig, zeitgemäß, ohne klassische Kanzlei-Symbolik. Durchgehend eine Schrift (Hanken Grotesk, variabel) mit unterschiedlichen Gewichten, keine Kursiven. Buttons und Bildflächen mit 8–10 px Radius, Navigation mit dezent hinterlegtem aktivem Punkt, Telefon als dunkler Button. Startseite: Name und Leitsatz links, Einleitung und Aktionen rechts, darunter ein breites Isar-Bild und die Kontaktleiste. Rechtsgebiete als nummeriertes Register (01–03), Hinweise als ruhige Papierflächen.
-Farben: Tinte `#131b25`, Papier `#f3efe7`/`#faf8f3`, Bordeaux `#7a2a34` als einziger Akzent.
+## Gestaltung – Leitidee „Direkt zum Anwalt“
+Einzelkanzlei = ein Ansprechpartner. Die Startseite beginnt mit einem Satz, der zugleich in die drei Rechtsgebiete führt (verlinkt), darunter das Isar-Bild mit versetzter Bordeaux-Fläche und dem dunklen Feld „Direkt zum Anwalt“ (Telefon, Mobil, E-Mail) als einzige Handlung. Wortmarke „Steffen Welz.“ mit Bordeaux-Punkt, Navigation als ruhige Insel mit hervorgehobenem aktivem Punkt.
+Durchgehend Hanken Grotesk (variabel), keine Kursiven; Buttons und Flächen mit 7–10 px Radius. Farben: Papier `#faf8f3`/`#f3efe7` als Grund, Bordeaux `#7a2a34`/`#6b2530` als Markenfläche (Kanzlei-Abschnitt, Frist-Hinweise), Tinte `#131b25` nur für Text, Direkt-Feld und Fuß.
+Unterseiten: Zivilrecht mit Bereichsindex im Kopf und zweispaltigen Kapiteln; Arbeits- und Strafrecht mit eigenem Hinweis im Kopf (3-Wochen-Frist bzw. Schweigerecht) und Themenleiste; Person & Kanzlei mit Werdegang; Kontakt als Kontaktliste mit Anfahrt.
+Kontaktformular bewusst nicht umgesetzt (bräuchte serverseitiges Skript/Hosting-Konfiguration); Kontakt über Telefon/E-Mail-Links.
+Orientierung (nur Prinzipien): Kliemt (Wortmarke, eine Markenfarbe), YPOG (selbstbewusste Typo-Aussage, weiche Bauteile), SKW Schwarz (versetzte Farbfläche hinter Bild), Uta Hervol (eine tragende Leitidee).
 
 ## Seiten
 `index` · `kanzlei` (Person, Werdegang, Bürogemeinschaft) · `rechtsgebiete` (Übersicht, Ablauf, Kosten) · `zivilrecht` (Vertrags-, Verkehrs-, Miet-, Gesellschafts-, Erbrecht) · `arbeitsrecht` · `strafrecht` (inkl. Ordnungswidrigkeiten) · `kontakt` · `impressum` · `datenschutz` · `404`, dazu `robots.txt`, `sitemap.xml`.

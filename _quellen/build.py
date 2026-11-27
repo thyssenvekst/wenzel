@@ -183,7 +183,7 @@ FUSS = """
 """
 
 
-KONTAKTBAND = """<section class="abschnitt dunkel" aria-labelledby="kontakt">
+KONTAKTBAND = """<section class="abschnitt schluss" aria-labelledby="kontakt">
   <div class="wrap schluss-raster">
     <div class="zeige">
       <p class="marg">Kontakt</p>
